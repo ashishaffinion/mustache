@@ -162,7 +162,7 @@ var tests = []Test{
         "categories": {&Category{"a", "b"}},
     }, "a - b"},
 
-    //invalid syntax - https://github.com/hoisie/mustache/issues/10
+    //invalid syntax - https://github.com/ashishaffinion/mustache/issues/10
     {`{{#a}}{{#b}}{{/a}}{{/b}}}`, map[string]interface{}{}, "line 1: interleaved closing tag: a"},
 
     //dotted names(dot notation)
